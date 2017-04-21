@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rishabh.mynotes.AddNotes">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/add_your_notes"
+    android:textSize="40sp"
+    android:textAlignment="center"
+    android:id="@+id/textView"
+    android:textColor="#19b5d1"
+    android:textStyle="bold|italic"
+    android:textAppearance="@color/colorAccent"
+    />
+    <EditText
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:id="@+id/heading"
+        android:layout_marginTop="20dp"
+      android:hint="@string/enter_heading_to_your_note"
+        />
+<EditText
+    android:paddingTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/heading"
+    android:layout_above="@+id/SubmitNotes"
+    android:hint="@string/write_your_notes_here"
+    android:gravity="top|left"
+    android:id="@+id/notes"
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/SubmitNotes"
+        android:textStyle="bold|italic"
+        style="?android:attr/borderlessButtonStyle"/>
+</RelativeLayout>

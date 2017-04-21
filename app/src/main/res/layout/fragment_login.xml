@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rishabh.mynotes.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:id="@+id/textView"
+        android:textStyle="bold|italic"
+        android:textColor="#217582"
+        />
+
+    <EditText
+        android:id="@+id/enterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:padding="20dp"
+        android:hint="@string/enter_email_address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterEmail"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:background="@drawable/rounded"
+        android:padding="20dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="@string/login1" />
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShowList">
+<item android:id="@+id/action_add"
+    android:icon="@mipmap/ic_note_add_white_24dp"
+    android:title="@string/add_note"
+    app:showAsAction="always"
+    tools:ignore="AlwaysShowAction" />
+    <item android:id="@+id/signMeOut"
+        android:title="@string/logout"
+        app:showAsAction="collapseActionView"/>
+
+</menu>
